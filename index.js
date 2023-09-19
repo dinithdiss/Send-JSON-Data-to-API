@@ -6,7 +6,7 @@ async function sendObjectToAPI(jsonObject) {
   try {
     // Make a POST request to the API endpoint
     const response = await axios.post(
-      "http://localhost:4000/app/admin/flavorsheet",
+      "ADD YOUR API ENDPOINT",
       jsonObject
     );
 
@@ -19,7 +19,7 @@ async function sendObjectToAPI(jsonObject) {
 }
 
 // Read the JSON file
-fs.readFile("Flavorsheet.json", "utf8", (err, data) => {
+fs.readFile("sampledata.json", "utf8", (err, data) => {
   if (err) {
     console.error("Error reading JSON file:", err);
     return;
